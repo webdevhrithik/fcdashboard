@@ -1,0 +1,66 @@
+{% extends 'dash/index.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Page Wrapper -->
+
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+  <!-- Main Content -->
+  <div id="content">
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+
+      <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+            class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+      </div>
+
+
+      <div class="flex mb-5">
+
+        <span class="font-weight-bold mr-4">Sort By:</span>
+
+        <span class="btn rounded-pill border-2 shadow">Category</span>
+        <span class="btn rounded-pill border-2 shadow">Language</span>
+        <span class="btn rounded-pill border-2 shadow">Date Published</span>
+
+      </div>
+
+      <h4 class="font-weight-bolder mb-4">Our Stories</h4>
+      <hr>
+
+      <div class="row">
+
+        <div class="col-10 col-lg-4">
+          <div class="card shadow" style="width: 18rem;">
+            <img src={% static 'img/video.png' %} class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Story Title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+    <!-- /.container-fluid -->
+
+
+  </div>
+  <!-- End of Main Content -->
+
+</div>
+<!-- End of Content Wrapper -->
+
+<script src={% static "js/demo/chart-bar-demo.js" %}></script>
+
+{% endblock content %}
