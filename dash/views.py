@@ -1,7 +1,9 @@
 from django.shortcuts import render
+from .models import *
 
 def home(request):
-    context = {}
+    posts = Post.objects.all()
+    context = {'posts': 'posts'}
     return render(request, 'dash/dash.html', context)
 
 def charts(request):
